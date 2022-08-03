@@ -1,0 +1,85 @@
+.comment {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.comentAvatarPhoto > img {
+  max-width: 50px;
+  border-radius: 8px;
+}
+
+.commentContent {
+  background: var(--gray-700);
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.commentText > strong {
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.commentText > span {
+  font-weight: 700;
+  color: var(--gray-400);
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+.commentText > time {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--gray-400);
+  line-height: 1.6;
+}
+.commentText > p {
+  font-size: 0.875rem;
+  color: var(--gray-300);
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.trash {
+  color: var(--gray-400);
+  line-height: 0;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.3s;
+  height: fit-content;
+}
+
+.trash:hover {
+  color: var(--red-500);
+}
+
+.avaliate button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 1rem;
+  color: var(--gray-400);
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.3s;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.avaliate button:hover {
+  color: var(--white);
+}
+
+.avaliate button p span::before {
+  padding: 0 0.25rem;
+  content: '\2022';
+}
+
+.avaliated,
+.avaliated button {
+  color: var(--green-500);
+}
